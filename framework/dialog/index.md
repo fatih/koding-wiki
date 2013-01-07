@@ -1,3 +1,3 @@
-# KDDialogView
+# Dialog
 
 * [KDDialogView](/framework/dialog/KDDialogView)
