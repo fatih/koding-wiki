@@ -3,6 +3,7 @@ wiki-name: "Koding Framework Docs"
 # Directories
 wiki-dir: "."
 static-dir: "."
+html-dir: "/Users/arslan/Sites/arslan.koding.com/website/docs/"
 cvs-exclude: true
 
 # Building
@@ -18,7 +19,3 @@ markdown:
   extension-configs:
     codehilite:
       force_linenos: false
-
-server:
-    bind: "10.0.0.10"
-
