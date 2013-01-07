@@ -1,0 +1,24 @@
+wiki-name: "Koding Framework Docs" 
+
+# Directories
+wiki-dir: "."
+static-dir: "."
+cvs-exclude: true
+
+# Building
+document-extensions: [.md, .mdown, .markdown, .wiki, .text]
+generate-listing: sometimes
+listing-filename: "_list.html"
+
+# Rendering
+markdown:
+  safe-mode: false
+  output-format: xhtml1
+  extensions: [codehilite, def_list, meta, headerid]
+  extension-configs:
+    codehilite:
+      force_linenos: false
+
+server:
+    bind: "10.0.0.10"
+
