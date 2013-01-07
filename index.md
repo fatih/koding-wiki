@@ -1,10 +1,11 @@
-<!-- title: Index -->
-
-# Koding Framework
+# Koding Framework Docs
 
 Welcome to Koding Framework Docs. KD Framework enables user to create custom
-apps in an easy and productive way. Below are some useful tutorial and api docs
-that will help you to create these apps. For any improvements, modifications or
+apps in an easy and productive way. 
+
+Below are some useful tutorial and api docs that will help you to create these
+apps. I recommended to use the Kodepad app in Koding.com. It instantly let you
+modify and create apps on the-fly. For any improvements, modifications or
 additionsjust sent a pull-request to [Koding-Wiki github git
 repo](github_adress).
 
@@ -41,6 +42,3 @@ repo](github_adress).
 
 ### [Forms](/framework/forms)
 * [KDFormViewWithFields](/framework/forms/KDFormViewWithFields)
-
-For more info on conributing and creating a servable static website of the wiki
-read the [contribution and deploying](/misc/koding_wiki) file.
