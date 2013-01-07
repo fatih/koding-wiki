@@ -1,7 +1,7 @@
 # Koding source docs
 
-This repo is using markdoc and is hosted at:
-[arslan.koding.com](https://arslan.koding.com/docs)
+This repo is using markdoc and the static files are hosted at:
+[arslan.koding.com/docs](https://arslan.koding.com/docs)
 
 Please read further if you want to contribute or deploy the wiki on your local
 machine.
