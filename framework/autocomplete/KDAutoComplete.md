@@ -1,3 +1,3 @@
 # KDAutoComplete
 
-KDAutoComplete is inerhited from [KDView](/framework/input/KDInputView).
+KDAutoComplete is inerhited from [KDView](/framework/core/KDView).
