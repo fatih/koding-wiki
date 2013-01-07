@@ -1,7 +1,8 @@
 # KDFormViewWithFields
 
 This method creates a form with fields. Below is an example with three
-[fields](link to field doc) (name, domain and email) and two [buttons](/framework/kdbuttonview) (install and cancel). 
+[fields](link to field doc) (name, domain and email) and two
+[KDButtons](/framework/buttons/KDButtonView) (install and cancel). 
 
     :::coffeescript
     form = new KDFormViewWithFields

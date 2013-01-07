@@ -1,6 +1,6 @@
 # KDButtonGroupView
 
-KDButtonGroupView is inerhited from [KDView](/framework/core/kdview). It
+KDButtonGroupView is inerhited from [KDView](/framework/core/KDView). It
 let you group buttons in an easy way. Below is an example code:
    
     :::coffeescript

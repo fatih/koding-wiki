@@ -1,7 +1,7 @@
 # KDWmdInput
 
-KDWmdInput is inerhited from [KDInputView](/framework/kdinputview). It's a WMD
-input forked from Stackoverflow's clone. Below is an example code:
+KDWmdInput is inerhited from [KDInputView](/framework/input/KDInputView). It's a
+WMD input forked from Stackoverflow's clone. Below is an example code:
 
     ... fill here
 

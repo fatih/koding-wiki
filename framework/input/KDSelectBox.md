@@ -1,6 +1,7 @@
 # KDSelectBox
 
-KDInputViewWithPreview is inerhited from [KDInputView](/framework/kdinputview).
+KDInputViewWithPreview is inerhited from
+[KDInputView](/framework/input/KDInputView).
 It's a simple selectbox which you can use on its alone or with KDInputView
 itself. Below is an example code:
 
@@ -15,4 +16,4 @@ itself. Below is an example code:
                       ]
 
 There is no spesific additional option. Please refer to
-[KDInputView](/framework/kdinputview) for more information. 
+[KDInputView](/framework/input/KDInputView) for more information. 

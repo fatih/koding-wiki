@@ -1,6 +1,8 @@
 # KDButtonViewWithMenu
 
-KDButtonViewWithMenu is inerhited from [KDInputView](/framework/input/KDButtonView). It provides a second menu next to the button. Below is an example code:
+KDButtonViewWithMenu is inerhited from
+[KDInputView](/framework/input/KDInputView). It provides a second menu next to
+the button. Below is an example code:
 
     :::coffeescript
     class MainView extends JView

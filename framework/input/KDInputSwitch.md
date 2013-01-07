@@ -1,7 +1,8 @@
 #KDInputSwitch
 
-KDInputSwitch is inerhited from [KDInputView](/framework/kdinputview). It is a
-simple on-off switch. There is also [KDOnOffSwitch](/framework/kdonoffswitch),
+KDInputSwitch is inerhited from [KDInputView](/framework/input/KDView). It is a
+simple on-off switch. There is also
+[KDOnOffSwitch](/framework/input/KDOnOffSwitch),
 which is similar but has a "on" and "off" labels on it. KDInputSwitch is more
 general and useful if you want just let users enable certain things. Below is an
 example code:
