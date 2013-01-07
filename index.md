@@ -31,6 +31,9 @@ repo](github_adress).
 ### [Notification](/framework/notification)
 * [KDNotificationView](/framework/notification/KDNotificationView)
 
+### [Dialog](/framework/dialog)
+* [KDDialogView](/framework/dialog/KDDialogView)
+
 ### [Buttons](/framework/buttons)
 * [KDButtonView](/framework/buttons/KDButtonView)
 * [KDButtonGroupView](/framework/buttons/KDButtonGroupView)
