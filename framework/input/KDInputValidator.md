@@ -20,12 +20,6 @@ input data from the user. Below is an example used withing KDInputView itself:
           email     : "keydown"
           required  : "mouseenter"
 
-Sinan yasar
-22:15
-eventleri de validation bazli girebiliyosun
-22:15
-ama optional
-
 
 KDInputView view takes all the rules and chain them into one global validation.
 That means you can sum up validations. Like "email + minimum length of 9" or
@@ -50,7 +44,8 @@ minLength and one for maxLength. Anything beyond this lengths get unvalidated.
 * **uri**: validate for URI, like URL's, paths,etc..
 * **regExp**: validate agains a custom regex rule
 
-Besides the rules you add custom error messages for each rule.
+Besides the rules you add custom error messages for each rule. Also you can 
+specify for each validation a custom event (as shown in the example).
 
 
 
