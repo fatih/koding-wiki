@@ -45,3 +45,13 @@ repo](github_adress).
 
 ### [Forms](/framework/forms)
 * [KDFormViewWithFields](/framework/forms/KDFormViewWithFields)
+
+### [Autocomplete](/framework/autocomplete)
+
+* [KDAutoComplete](/framework/autocomplete/KDAutoComplete)
+* [KDAutoCompleteController](/framework/autocomplete/KDAutoCompleteController)
+* [KDAutoCompleteListItemView](/framework/autocomplete/KDAutoCompleteListItemView)
+* [KDAutoCompleteListView](/framework/autocomplete/KDAutoCompleteListView)
+* [KDAutoCompletedItem](/framework/autocomplete/KDAutoCompletedItem)
+* [KDSimpleAutocomplete](/framework/autocomplete/KDSimpleAutocomplete)
+* [KDMultipleInputView](/framework/autocomplete/KDMultipleInputView)
