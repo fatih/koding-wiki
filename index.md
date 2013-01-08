@@ -15,7 +15,13 @@ repo](github_adress).
 * [App Storage](/framework/appstorage)
 * [How to run shell commands](/framework/shell)
 
-## UI Elements
+## Core 
+
+* [KDEventEmitter](/framework/core/KDEventEmitter)
+* [KDObject](/framework/core/KDObject)
+* [KDView](/framework/core/KDView)
+
+## Components
 
 ### [Input](/framework/input)
 * [KDInputView](/framework/input/KDInputView)
