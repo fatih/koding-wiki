@@ -16,18 +16,29 @@ The currently supported options are:
   to to cssClass variable it get appended to kdview instead of overriding it.
   Ref: [http://www.w3.org/TR/1999/REC-html401-19991224/struct/global.html#adef-class](http://www.w3.org/TR/1999/REC-html401-19991224/struct/global.html#adef-class)
 * parent: a KDView Instance. By default it is null. If looks for this variable,
-  if not available the view itself is assigned as a parent.
+  if not available the view itself is assigned as a parent. Means parent is
+  always assigned automatically.
+* partial: a String of HTML or text. By default it is null. This is useful to
+  add any partial html or text inside our dom element. For example :
 
-* partial: a String of HTML or text. By default it is null.
-* pistachio: a String of Pistachio. By default it is null.
+      a  = new KDView
+      a.setPartial "<h1>Arslan</h1>"
+      # output: <div class='kdview'><h1>Arslan</h1></div>
+
+* pistachio: a String of Pistachio. By default it is null. If used than
+  Pistachio template engine is used instead of manually adding views. If you use
+  [JView](/core/JView) then then pistachio is enabled by default and should be
+  used.
 * delegate: a KDView Instance. By default it is null.
-* bind: a String of space seperated javascript dom events to be listened on instantiated view. By default it is
+* bind: a String of space seperated javascript dom events to be listened on
+  instantiated view. By default it is empty.
 * draggable: an Object holding draggable options and/or events !!! NOT HTML5
   !!!. By default it is null.
 * droppable: TBDL. By default it is null.
 * size: an Object holding width and height properties. By default it is null.
-* position: an Object holding top/right/bottom/left properties (would force view to be positioned absolutely). By default it is null.
-* attributes: an Object holding attribute key/value pairs e.g. {href:'#',title:'my picture'}. By default it is null.
+* position: an Object holding top/right/bottom/left properties (would force view
+  to be positioned absolutely). By default it is null.
+* attributes: an Object holding attribute key/value pairs e.g.
+  {href:'#',title:'my picture'}. By default it is null.
 * prefix: a String. By default it is empty.
 * suffix: a String. By default it is empty.
-* tooltip: an Object of twipsy options. By default it is null.
