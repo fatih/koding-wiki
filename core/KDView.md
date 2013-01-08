@@ -7,10 +7,14 @@ all gui classes in KD Framework.
 The currently supported options are:
 
 * tagName: a String of a HTML tag. By default it is "div".  It defines the basic
-  tag for the html view.
-
-* domId: a String. By default it is null.
-* cssClass: a String. By default it is empty.
+  name for the element. The default value "div" is already a common name for
+  adding structure to documents.
+* domId: a String. By default it is null. Defines the elements identifier name.
+  Ref: [http://www.w3.org/TR/1999/REC-html401-19991224/struct/global.html#adef-id](http://www.w3.org/TR/1999/REC-html401-19991224/struct/global.html#adef-id)
+* cssClass: a String. By default it is empty. Defines the class attribute of an
+  element. KDView has by default a class with the name "kdview". If you assigned anything
+  to to cssClass variable it get appended to kdview instead of overriding it.
+  Ref: [http://www.w3.org/TR/1999/REC-html401-19991224/struct/global.html#adef-class](http://www.w3.org/TR/1999/REC-html401-19991224/struct/global.html#adef-class)
 * parent: a KDView Instance. By default it is null. If looks for this variable,
   if not available the view itself is assigned as a parent.
 
