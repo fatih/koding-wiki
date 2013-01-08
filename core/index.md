@@ -1,5 +1,5 @@
 # Core 
 
-* [KDEventEmitter](/framework/core/KDEventEmitter)
-* [KDObject](/framework/core/KDObject)
-* [KDView](/framework/core/KDView)
+* [KDEventEmitter](/core/KDEventEmitter)
+* [KDObject](/core/KDObject)
+* [KDView](/core/KDView)
