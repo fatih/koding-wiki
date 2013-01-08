@@ -20,10 +20,11 @@ The currently supported options are:
   always assigned automatically.
 * partial: a String of HTML or text. By default it is null. This is useful to
   add any partial html or text inside our dom element. For example :
-
-      a  = new KDView
-      a.setPartial "<h1>Arslan</h1>"
-      # output: <div class='kdview'><h1>Arslan</h1></div>
+            
+          :::html
+          a  = new KDView
+          a.setPartial "<h1>Arslan</h1>"
+          # output: <div class='kdview'><h1>Arslan</h1></div>
 
 * pistachio: a String of Pistachio. By default it is null. If used than
   Pistachio template engine is used instead of manually adding views. If you use
