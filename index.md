@@ -49,7 +49,7 @@ repo](github_adress).
 
 ### [Modals](/framework/modals)
 * [KDModalView](/framework/modals/KDModalView)
-* [KDModalViewLoad](/framework/modals/KDModalViewLoad) (NOT FINISHED)
+* [KDModalViewLoad](/framework/modals/KDModalViewLoad)
 * [KDModalViewWithForms](/framework/modals/KDModalViewWithForms) (NOT FINISHED)
 * [KDModalController](/framework/modals/KDModalController) (NOT FINISHED)
 * [KDBlockingModalView](/framework/modals/KDBlockingModalView) (NOT FINISHED)
