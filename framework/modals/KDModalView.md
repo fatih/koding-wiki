@@ -1,4 +1,6 @@
-# Modal Windows
+# KDModalView
+
+KDModalView is inerhited from [KDView](/core/KDView). Below is an example code:
 
 
     :::coffeescript 
