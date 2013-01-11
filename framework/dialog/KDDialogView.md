@@ -1,6 +1,6 @@
 # KDDialogView
 
-KDDialogView is inerhited from [KDView](/framework/input/KDView).
+KDDialogView is inerhited from [KDView](/core/KDView).
 It let you easily create on-the-fly dialogs. Below is example code.
 
     :::coffeescript
