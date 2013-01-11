@@ -1,7 +1,7 @@
 # KDModalViewLoad
 
 KDModalViewLoad is inerhited from
-[KDModalView](/framework/modals/KDModalViewLoad). It is exactly the same as with
+[KDModalView](/framework/modals/KDModalView). It is exactly the same as with
 KDModalView with just some differences. There are two methods you can call after
 the modal view get loaded and before the modal view get destroyed. These are
 
