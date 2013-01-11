@@ -140,16 +140,13 @@ supported options:
 * draggable: an Object holding draggable options and/or events !!! NOT HTML5
   !!!. By default it is null.
 * droppable: TBDL. By default it is null.
-
-* size: an Object holding width and height properties. By default it is null.
-
+* size: an Object holding width and height properties. By default it is null. It
+sets the style.width and style.height of a dom element. In our case it's the
+view itself.
 * position: an Object holding top/right/bottom/left properties (would force view
   to be positioned absolutely). By default it is null.
 * attributes: an Object holding attribute key/value pairs e.g.
-  {href:'#',title:'my picture'}. By default it is null.
+  {href:'#',title:'my picture'}. By default it is null. Set the dom elements
+  `attr` value.
 * prefix: a String. By default it is empty.
 * suffix: a String. By default it is empty.
-
-
-notes:
-
