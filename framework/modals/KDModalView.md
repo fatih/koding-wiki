@@ -1,5 +1,6 @@
 # Modal Windows
 
+
     :::coffeescript 
     modal = new KDModalView
         title: "A Modal with a Title"
@@ -25,3 +26,7 @@
                     new KDNotificationView
                         title: "Clicked no!"
                     modal.destroy()
+
+A modal view will be created if the button below in the picture is clicked:
+
+![image](KDModalView.png)

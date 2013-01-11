@@ -18,7 +18,7 @@ repo](github_adress).
 ## Core 
 
 * [KDEventEmitter](/core/KDEventEmitter)
-* [KDObject](/core/KDObject)
+* [KDObject](/core/KDObject) (NOT FINISHED)
 * [KDView](/core/KDView)
 * [JView](/core/JView)
 
@@ -49,16 +49,20 @@ repo](github_adress).
 
 ### [Modals](/framework/modals)
 * [KDModalView](/framework/modals/KDModalView)
+* [KDModalViewLoad](/framework/modals/KDModalViewLoad) (NOT FINISHED)
+* [KDModalViewWithForms](/framework/modals/KDModalViewWithForms) (NOT FINISHED)
+* [KDModalController](/framework/modals/KDModalController) (NOT FINISHED)
+* [KDBlockingModalView](/framework/modals/KDBlockingModalView) (NOT FINISHED)
 
 ### [Forms](/framework/forms)
 * [KDFormViewWithFields](/framework/forms/KDFormViewWithFields)
 
 ### [Autocomplete](/framework/autocomplete)
 
-* [KDAutoComplete](/framework/autocomplete/KDAutoComplete)
-* [KDAutoCompleteController](/framework/autocomplete/KDAutoCompleteController)
-* [KDAutoCompleteListItemView](/framework/autocomplete/KDAutoCompleteListItemView)
-* [KDAutoCompleteListView](/framework/autocomplete/KDAutoCompleteListView)
-* [KDAutoCompletedItem](/framework/autocomplete/KDAutoCompletedItem)
-* [KDSimpleAutocomplete](/framework/autocomplete/KDSimpleAutocomplete)
-* [KDMultipleInputView](/framework/autocomplete/KDMultipleInputView)
+* [KDAutoComplete](/framework/autocomplete/KDAutoComplete) (NOT FINISHED)
+* [KDAutoCompleteController](/framework/autocomplete/KDAutoCompleteController) (NOT FINISHED)
+* [KDAutoCompleteListItemView](/framework/autocomplete/KDAutoCompleteListItemView) (NOT FINISHED)
+* [KDAutoCompleteListView](/framework/autocomplete/KDAutoCompleteListView) (NOT FINISHED)
+* [KDAutoCompletedItem](/framework/autocomplete/KDAutoCompletedItem) (NOT FINISHED)
+* [KDSimpleAutocomplete](/framework/autocomplete/KDSimpleAutocomplete) (NOT FINISHED)
+* [KDMultipleInputView](/framework/autocomplete/KDMultipleInputView) (NOT FINISHED)
