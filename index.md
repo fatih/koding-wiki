@@ -35,6 +35,12 @@ repo](github_adress).
 * [KDSelectBox](/framework/input/KDSelectBox)
 * [KDWmdInput](/framework/input/KDWmdInput)
 
+### [Misc](/framework/misc)
+
+* [KDImage](/framework/image/KDImage) (NOT FINISHED)
+* [KDHeaderView](/framework/header/KDHeaderView) (NOT FINISHED)
+* [KDLoaderView](/framework/loader/KDLoaderView) (NOT FINISHED)
+
 ### [Notification](/framework/notification)
 * [KDNotificationView](/framework/notification/KDNotificationView)
 
