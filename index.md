@@ -36,7 +36,6 @@ repo](github_adress).
 * [KDWmdInput](/framework/input/KDWmdInput)
 
 ### [Misc](/framework/misc)
-
 * [KDImage](/framework/image/KDImage) (NOT FINISHED)
 * [KDHeaderView](/framework/header/KDHeaderView) (NOT FINISHED)
 * [KDLoaderView](/framework/loader/KDLoaderView) (NOT FINISHED)
