@@ -52,6 +52,7 @@ repo](github_adress).
 * [KDModalViewWithForms](/framework/modals/KDModalViewWithForms)
 
 ### [Forms](/framework/forms)
+* [KDFormView](/framework/forms/KDFormView)
 * [KDFormViewWithFields](/framework/forms/KDFormViewWithFields)
 
 ### [Autocomplete](/framework/autocomplete)
