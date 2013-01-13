@@ -18,7 +18,7 @@ the currently supported methods:
 
     Another example:
 
-    "<img src='#{URL.createObjectURL KDImage.dataURItoBlob screenshot.thumb}'/>"
+        "<img src='#{URL.createObjectURL KDImage.dataURItoBlob screenshot.thumb}'/>"
 
     For more info about the usage of dataURItoBlob, please have a look at here:
     [Convert Data URI to File then append to FormData](http://stackoverflow.com/questions/4998908/convert-data-uri-to-file-then-append-to-formdata)
