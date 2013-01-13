@@ -6,20 +6,20 @@ apps in an easy and productive way.
 Below are some useful tutorial and api docs that will help you to create these
 apps. I recommended to use the Kodepad app in Koding.com. It instantly let you
 modify and create apps on the-fly. For any improvements, modifications or
-additionsjust sent a pull-request to [Koding-Wiki github git
-repo](github_adress).
+additionsjust sent a pull-request to the [git repo](https://github.com/farslan/koding-wiki).
 
 ## Misc
 
 * [Create a Hello Koding application](/framework/first_app)
 * [App Storage](/framework/appstorage)
 * [How to run shell commands](/framework/shell)
+* [Name convention](/misc/name_convention) (NOT FINISHED)
 
 ## Core 
 
 * [KDEventEmitter](/core/KDEventEmitter)
 * [KDObject](/core/KDObject) (NOT FINISHED)
-* [KDView](/core/KDView)
+* [KDView](/core/KDView) (IN PROGRESS)
 * [JView](/core/JView)
 
 ## Components
@@ -52,6 +52,13 @@ repo](github_adress).
 * [KDButtonMenu](/framework/buttons/KDButtonMenu)
 * [KDButtonViewWithMenu](/framework/buttons/KDButtonViewWithMenu)
 
+### [Menus](/framework/menus)
+* [KDContextMenu](/framework/menus/KDContextMenu) (NOT FINISHED)
+* [JContextMenu](/framework/menus/JContextMenu) (NOT FINISHED)
+* [JContextMenuItem](/framework/menus/JContextMenuItem) (NOT FINISHED)
+* [JContextMenuTreeView](/framework/menus/JContextMenuTreeView) (NOT FINISHED)
+* [JContextMenuTreeViewController](/framework/menus/JContextMenuTreeViewController) (NOT FINISHED)
+
 ### [Modals](/framework/modals)
 * [KDModalView](/framework/modals/KDModalView)
 * [KDModalViewWithForms](/framework/modals/KDModalViewWithForms)
@@ -61,7 +68,6 @@ repo](github_adress).
 * [KDFormViewWithFields](/framework/forms/KDFormViewWithFields)
 
 ### [Autocomplete](/framework/autocomplete)
-
 * [KDAutoComplete](/framework/autocomplete/KDAutoComplete) (NOT FINISHED)
 * [KDAutoCompleteController](/framework/autocomplete/KDAutoCompleteController) (NOT FINISHED)
 * [KDAutoCompleteListItemView](/framework/autocomplete/KDAutoCompleteListItemView) (NOT FINISHED)
