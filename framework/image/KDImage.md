@@ -16,6 +16,10 @@ the currently supported methods:
         blob = KDImage.dataURItoBlob dataURL
         objectURL = URL.createObjectURL blob
 
+    Another example:
+
+    "<img src='#{URL.createObjectURL KDImage.dataURItoBlob screenshot.thumb}'/>"
+
     For more info about the usage of dataURItoBlob, please have a look at here:
     [Convert Data URI to File then append to FormData](http://stackoverflow.com/questions/4998908/convert-data-uri-to-file-then-append-to-formdata)
 
@@ -27,23 +31,26 @@ create new KDImage class. Below is an example of this:
     :::coffeescript
     imgExample = new KDImage(file)
 
-The constructor takes two arguments:
+The constructor takes actually two arguments. We ommited the second argument
+(takes the default one). The two arguments are:
 
 * **data** : The file 
-* **format**: a String. Takes two arguments, which the second depends on the
-  first argument.By default it is 'image/png'. It is the type of the image
-  format (defaults to PNG). Chrome supports the 'image/webp' type.  If the
-  requested type is 'image/jpeg' or 'image/webp', then the second argument, if
-  it is between 0.0 and 1.0, is treated as indicating image quality; if the
-  second argument is anything else, the default value for image quality is used.
-  Other arguments are ignored.
+* **format**: a String. By default it is 'image/png'. Defines the type of the
+  image format. For now it is passed to the method `toDataURL.` For more info
+  about types you can use please have look at
+  [HTMLCanvasElement](https://developer.mozilla.org/en-US/docs/DOM/HTMLCanvasElement)
 
 After creating an new KDImage(like imgExample), you can use the following
 methods via `imgExample.toBlob()`, `imgExample.createView()`, etc:
 
 * **toBlob():** calls dataURItoBlob for the data given by the constructor.
-* **load (src, callback)**:
-* **process (action, algorithm)**: 
-* **processAll (action, callback)**: 
-* **createView()**: 
+* **load (src, callback)**: Creates a new HTML Image element with the src
+  containing the URL of the image. After the load of the document the callback
+  returns the img element itself.
+* **process (action, algorithm)**: Currently can scale and crop images. TODO
+* **processAll (action, callback)**: Process all actions specified for the image
+  in a queue. TODO
+* **createView()**:  Creates a `<img src=...>` element with src pointing to data
+  passed in the constructor. If the `data` is a string then it is assigned
+  direclty, otherise data.src is assigned.
 
