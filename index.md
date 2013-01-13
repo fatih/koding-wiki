@@ -37,8 +37,8 @@ repo](github_adress).
 
 ### [Misc](/framework/misc)
 * [KDImage](/framework/image/KDImage) (NOT FINISHED)
-* [KDHeaderView](/framework/header/KDHeaderView) (NOT FINISHED)
-* [KDLoaderView](/framework/loader/KDLoaderView) (NOT FINISHED)
+* [KDHeaderView](/framework/header/KDHeaderView)
+* [KDLoaderView](/framework/loader/KDLoaderView)
 
 ### [Notification](/framework/notification)
 * [KDNotificationView](/framework/notification/KDNotificationView)
