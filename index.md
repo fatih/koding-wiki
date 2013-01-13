@@ -52,8 +52,12 @@ additionsjust sent a pull-request to the [git repo](https://github.com/farslan/k
 * [KDButtonMenu](/framework/buttons/KDButtonMenu)
 * [KDButtonViewWithMenu](/framework/buttons/KDButtonViewWithMenu)
 
+### [List](/framework/list)
+* [KDListItemView](/framework/list/KDListItemView) (NOT FINISHED)
+* [KDListView](/framework/list/KDListView) (NOT FINISHED)
+* [KDListViewController](/framework/list/KDListViewController) (NOT FINISHED)
+
 ### [Menus](/framework/menus)
-* [KDContextMenu](/framework/menus/KDContextMenu) (NOT FINISHED)
 * [JContextMenu](/framework/menus/JContextMenu) (NOT FINISHED)
 * [JContextMenuItem](/framework/menus/JContextMenuItem) (NOT FINISHED)
 * [JContextMenuTreeView](/framework/menus/JContextMenuTreeView) (NOT FINISHED)
