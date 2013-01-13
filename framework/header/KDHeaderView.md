@@ -10,7 +10,7 @@ Below is an example code:
       type: "big"
       title: "Koding is fun!"
 
-You can the heading type with the following options:
+You can change the heading type with the following options:
 
 * **type**: a String. By default it is set to `<h4>`. There are three types that you
   can use:
@@ -21,5 +21,3 @@ You can the heading type with the following options:
 
 * **title** : This sets the content of the headings. The title is wrapped around
   a `<span>` tag before it get appended to the DOM element.
-
-
