@@ -24,8 +24,8 @@ the currently supported methods:
 These methods are used as an instance method. To do this you have to first
 create new KDImage class. Below is an example of this:
 
-  :::coffeescript
-  imgExample = new KDImage(file)
+    :::coffeescript
+    imgExample = new KDImage(file)
 
 The constructor takes two arguments:
 
