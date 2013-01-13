@@ -1,5 +1,5 @@
 # Misc
 
-* [KDImage](/framework/image/KDImage) (IN PROGRESS)
+* [KDImage](/framework/image/KDImage)
 * [KDHeaderView](/framework/header/KDHeaderView)
 * [KDLoaderView](/framework/loader/KDLoaderView)
