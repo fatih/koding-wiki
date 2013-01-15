@@ -13,12 +13,16 @@ Where options is a object of the following are currently supperted
 
 ## options
 
-* **wrapper**             ?= yes
-* **scrollView**          ?= yes
-* **keyNav**              ?= no
-* **multipleSelection**   ?= no
-* **selection**           ?= yes
-* **startWithLazyLoader** ?= no
+* **wrapper**: a Boolean. By default it is yes. It sets `options.view` to a new
+  KDView class with a css class of name: "listview-wrapper". That means you can use
+  getView() (which comes from KDViewController) to get a ready view for your
+  list. If you set it to `no`, then the listView is set to `options.view`.
+* **scrollView**: Boolean. By default it is yes. The listView is added as a
+  subView to a KDScrollView. If you don't want this you can disable it.
+* **keyNav**: Boolean. By default it is no.
+* **multipleSelection**: Boolean.By default it is no.
+* **selection**: Boolean. By default it is yes.
+* **startWithLazyLoader**: By default it is no.
 * **itemChildClass**     or= null
 * **itemChildOptions**   or= {}
 * **view**
