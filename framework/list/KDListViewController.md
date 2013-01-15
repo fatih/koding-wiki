@@ -119,9 +119,8 @@ Here you see that we have alreayd added thre items. The code for this app is:
                   title : "Item added!"
             "Remove Item" :
               callback    : =>
-                input = @inputView.getValue()
-                itemView = @listController.getListView()
-                @listController.removeItem itemView.items input
+                inputData = @inputView.getValue()
+                @listController.removeItem null, inputData, null
                 @_notify?.destroy()
                 @_notify = new KDNotificationView
                   title : "Item removed!"
