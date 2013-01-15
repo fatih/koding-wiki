@@ -11,6 +11,8 @@ The constructor takes two arguments:
 
 Where options is a object of the following are currently supperted
 
+## options
+
 * **wrapper**             ?= yes
 * **scrollView**          ?= yes
 * **keyNav**              ?= no
@@ -21,6 +23,55 @@ Where options is a object of the following are currently supperted
 * **itemChildOptions**   or= {}
 * **view**
 
+## helpers
+
+* itemForId:(id)->
+* getItemsOrdered:->
+* getItemCount:->
+* setListView:(listView)->
+* getListView:->
+* forEachItemByIndex:(ids, callback)->
+
+## modifications
+
+* addItem:(itemData, index, animation)->
+* removeItem:(itemInstance, itemData, index)->
+* registerItem:(view, index)->
+* unregisterItem:(itemInfo)->
+* replaceAllItems:(items)->
+* removeAllItems:->
+
+## mouseevents
+
+* mouseDownHappenedOnItem:(item, event)->
+* mouseUpHappened:(event)->
+* mouseEnterHappenedOnItem:(item, event)->
+
+## keyevents
+
+* keyDownPerformed:(mainView, event)->
+
+## item selection
+
+* selectItem:(item, event = {})->
+* selectItemBelowOrAbove:(event)->
+* selectNextItem:(item, event)->
+* selectPrevItem:(item, event)->
+* deselectAllItems:()->
+* deselectSingleItem:(item)->
+* selectSingleItem:(item)->
+* selectAllItems:()->
+* selectItemsByRange:(item1, item2)->
+* itemSelectionPerformed:->
+* itemDeselectionPerformed:(deselectedItems)->
+
+## lazy loaders
+
+* showLazyLoader:(emitWhenReached = yes)->
+* hideLazyLoader:->
+
+# Example app for KDListViewController and KDListView
+
 Below is an example code:
 
     :::coffeescript
@@ -28,7 +79,7 @@ Below is an example code:
       lastToFirst     : yes
       viewOptions     :
         type          : "example-list"
-        itemClass     : ExampleListItem
+        itemClass     : ExampleLgtistItem
 
 Where ExampleListItem is of type
 [KDListItemView](/framework/list/KDListItemView).
