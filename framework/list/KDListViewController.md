@@ -1,7 +1,7 @@
 # KDListViewController
 
 KDListViewController is inerhited from
-[KDListViewController](/core/KDViewController). It let you create easily lists with
+[KDViewController](/core/KDViewController). It let you create easily lists with
 custom items. By custom we mean any view that is [KDView](/core/KDView) related.
 
 The constructor takes two arguments:
