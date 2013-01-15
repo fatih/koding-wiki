@@ -6,7 +6,8 @@ custom items. By custom we mean any view that is [KDView](/core/KDView) related.
 
 The constructor takes two arguments:
 
-  constructor:(options = {}, data)
+    :::coffeescript
+    constructor:(options = {}, data)
 
 Where options is a object of the following are currently supperted
 
@@ -18,22 +19,11 @@ Where options is a object of the following are currently supperted
 * **startWithLazyLoader** ?= no
 * **itemChildClass**     or= null
 * **itemChildOptions**   or= {}
-* **view**: a KDListView. If empty than the foloowing 
-
-    if options.view
-      @setListView listView = options.view
-    else
-      viewOptions                  = options.viewOptions or {}
-      viewOptions.lastToFirst      or= options.lastToFirst
-      viewOptions.itemClass        or= options.itemClass
-      viewOptions.itemChildClass   or= options.itemChildClass
-      viewOptions.itemChildOptions or= options.itemChildOptions
-
-      @setListView listView = new KDListView viewOptions
-
+* **view**
 
 Below is an example code:
 
+    :::coffeescript
     @listController = new KDListViewController
       lastToFirst     : yes
       viewOptions     :
@@ -64,11 +54,11 @@ Here you see that we have alreayd added thre items. The code for this app is:
           viewOptions     :
             type          : "example-list"
             itemClass     : ExampleItemView
-            
+
         @listView = @listController.getView()
 
         @buttons = new KDButtonGroupView
-          buttons: 
+          buttons:
             "Add Item"  :
               callback    : =>
                 input = @inputView.getValue()
@@ -90,17 +80,17 @@ Here you see that we have alreayd added thre items. The code for this app is:
                 @_notify?.destroy()
                 @_notify = new KDNotificationView
                   title : "All items removed"
-                  
+
         @inputView = new KDInputView
           cssClass      : "test-input"
           placeholder   : "Write item name..."
-              
+
       pistachio:->
         """
         {{> @header}}
         {{> @inputView}}
         {{> @buttons}}
-        {{> @listView}} 
+        {{> @listView}}
 
         """
       viewAppended: ->
@@ -110,8 +100,8 @@ Here you see that we have alreayd added thre items. The code for this app is:
       constructor: (options, data) ->
         super
 
-      partial: => 
-        content = @getData() 
+      partial: =>
+        content = @getData()
         """
         #{content}
         """
@@ -132,7 +122,7 @@ KDListItemView's:
         itemClass     : ExampleItemView
 
 As you see we use here `viewOptions` to define our item class. We use our own
-item class, named `ExampleItemView`. If we don't define anything then 
+item class, named `ExampleItemView`. If we don't define anything then
 an empty KDListItemView with no options is applied. You can remove the itemClass
 option and compile the app to see the result:
 
@@ -155,8 +145,8 @@ of the KDListItemView. We do these in the line:
       constructor: (options, data) ->
         super
 
-      partial: => 
-        content = @getData() 
+      partial: =>
+        content = @getData()
         """
         #{content}
         """
