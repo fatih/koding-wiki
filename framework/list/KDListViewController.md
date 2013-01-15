@@ -185,11 +185,17 @@ of the KDListItemView. We do these in the line:
     :::coffeescript
     @listController.addItem input
 
- The `@listController.addItem input` line basically creates a new list item
- based on the itemClass. The `addItem()` method is described at the beginning of
- the, basically here `input` is saved to the internal "data" variable.
- Now if we use `ExampleItemView` for the options `itemClass` than the partial is
- overrided via our own extended class:
+The `@listController.addItem input` line basically creates a new list item based
+on the itemClass. The `addItem()` method is described at the beginning of the,
+basically here `input` is the first argument. If we ommit any other arguments,
+than coffeescript assumes these as `null`. This means the line above is the same
+as:
+
+    :::coffeescript
+    @listController.addItem input, null, null
+
+Now if we use `ExampleItemView` for the options `itemClass` than the partial is
+overrided via our own extended class:
 
     :::coffeescript
     class ExampleItemView extends KDListItemView
@@ -206,25 +212,21 @@ As you here see, we're getting the data and showing it in the `partial`. We are
 overriding `partial. That's it because we use our custom KDListItemView
 (`ExampleItemView`) and setting it to `itemClass` in KDListViewController.
 
-Now, there are actually two ways to remove(as explaind at the beginning). We
+Now, there are actually three ways to remove(as explained at the beginning). We
 used the second way. The code for this is:
 
     :::coffeescript
     inputData = @inputView.getValue()
-    itemView = @listController.getListView()
-    @listController.removeItem itemView.items, inputData
+    @listController.removeItem null, inputData, null
 
-Here only the last two lines are important. First to remove any item we need the
-the views. `getListView()` gives us all the content we need to make any
-modification. After that we are passing two arguments, `itemView.items`
-and `inputData`. Because we didn't give any index number, we are iterating over
+Because we didn't give any index number or item instance, we are iterating over
 the whole list array until we match `inputData`. This is done automatically via
 `removeItem()`. Now this seems very easy, however problems occur when you have
 an item that is of complex form. Be careful with that. Another way is to remove
-via indexes, like:
+via item instances, like:
 
     :::coffeescript
     itemView = @listController.getListView()
-    @listController.removeItem itemView.items[2]
+    @listController.removeItem itemView.items[2], null, null
 
-This will remove the third item in the list.
+This will remove the third item instance in the list.
