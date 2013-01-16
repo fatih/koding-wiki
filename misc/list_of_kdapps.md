@@ -1,6 +1,6 @@
 # List of Koding Apps
 
-The best way to develop a new Koding App is to examine other Koding apps. Below
+The best way to develop a new Koding App is to examine other Koding apps.  Below
 are some opensource Koding apps you could fork, modify and learn from:
 
 **Rails Dashboard** - 
@@ -14,6 +14,9 @@ are some opensource Koding apps you could fork, modify and learn from:
 
 **Kodepad** - 
 [https://github.com/fkadeveloper/Previewer.kdapp](https://github.com/fkadeveloper/Previewer.kdapp)
+
+**ImageEditor** - 
+[https://github.com/fatihacet/ImageEditor.kdapp](https://github.com/fatihacet/ImageEditor.kdapp)
 
 **Drupal Installer** - 
 [https://github.com/aendrew/DrupalInstaller.kdapp](https://github.com/aendrew/DrupalInstaller.kdapp)
