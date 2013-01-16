@@ -106,7 +106,6 @@ example app that shows the basic of a KDListViewController and KDListItemView.
 The app looks like:
 
 ![image](KDList.png)
-
 Here you see that we have alreayd added thre items. The code for this app is:
 
     :::coffeescript
@@ -116,21 +115,23 @@ Here you see that we have alreayd added thre items. The code for this app is:
         @header = new KDHeaderView
           type: "big"
           title: "Example for KDListViewController and KDListView"
-
+          
         @listController = new KDListViewController
-          lastToFirst     : yes
-          viewOptions     :
-            type          : "example-list"
-            itemClass     : ExampleItemView
-
+          lastToFirst         : yes
+          startWithLazyLoader : yes
+          viewOptions         :
+            type              : "example-list"
+            itemClass         : ExampleItemView
+            
         @listView = @listController.getView()
-
+        
         @buttons = new KDButtonGroupView
           buttons:
             "Add Item"  :
               callback    : =>
                 input = @inputView.getValue()
                 @listController.addItem input
+                @listController.hideLazyLoader()
                 @_notify?.destroy()
                 @_notify = new KDNotificationView
                   title : "Item added!"
@@ -141,13 +142,14 @@ Here you see that we have alreayd added thre items. The code for this app is:
                 @_notify?.destroy()
                 @_notify = new KDNotificationView
                   title : "Item removed!"
-            "Remove all Items"  :
+            "Remove all Items"  :  
               callback    : =>
                 @listController.removeAllItems()
+                @listController.showLazyLoader()
                 @_notify?.destroy()
                 @_notify = new KDNotificationView
                   title : "All items removed"
-
+                  
         @inputView = new KDInputView
           cssClass      : "test-input"
           placeholder   : "Write item name..."
@@ -158,23 +160,23 @@ Here you see that we have alreayd added thre items. The code for this app is:
         {{> @inputView}}
         {{> @buttons}}
         {{> @listView}}
-
+        
         """
       viewAppended: ->
         @setTemplate do @pistachio
-
+        
     class ExampleItemView extends KDListItemView
       constructor: (options, data) ->
         super
-
+        
       partial: =>
         content = @getData()
         """
         #{content}
         """
-
-    appView.addSubView new MainView
-      cssClass: "my-koding-app"
+    
+appView.addSubView new MainView
+  cssClass: "my-koding-app"
 
 Let me explain the code in detail. The code itself is looks like a lot, however
 it's mostly the button and callback part that takes so much space. Anyway as you
@@ -245,4 +247,26 @@ via item instances, like:
     itemView = @listController.getListView()
     @listController.removeItem itemView.items[2], null, null
 
-This will remove the third item instance in the list.
+This will remove the third item instance in the list. 
+You will probably notice the loader which is starting to load if there is no
+items. This is so because we set the `startWithLazyLoader` option to `yes` in
+the constructor of the KDListViewController:
+
+    :::coffeescript
+    @listController = new KDListViewController
+      lastToFirst         : yes
+      startWithLazyLoader : yes
+      ...
+
+However as you notice the loader dissapear when add any item and appear again if
+remove all items. This is done manually with the following methods in the add
+item and removeAllItems button states:
+
+    :::coffeescript
+    # in "Add Item" button callback:
+    @listController.hideLazyLoader()
+
+    # in "Remove all Items" button callback:
+    @listController.showLazyLoader()
+
+
