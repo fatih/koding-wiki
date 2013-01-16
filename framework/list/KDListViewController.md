@@ -114,8 +114,46 @@ effects:
 
 * **removeItem**:(itemInstance, itemData, index)
 
-Removes the item from the list. This takes three arguments, however each one is
-optional. It means you have three methods to remove an item from a list.
+Removes the item from the list. This is a wrapper that calls 
+
+    :::coffeescript
+    @getListView().removeItem itemInstance, itemData, index
+
+Just like addItem(), this calls actually KDListView.removeItem(). It takes three
+arguments. These are :
+
+  * itemInstance: the item view (instance)
+  * itemData: the item data (is: item.getData())
+  * index: the index of the list
+
+Each one is optional. It means you have three methods to remove an item from a
+list. You can just give the item view (instance) itself. The method will try to
+itarate over all existing items and removes the first one it matches.
+
+    :::coffeescript
+    @removeItem itemInstance
+
+The secon option is to give a `itemData`. This is like the above, however it
+matches the data of the item instance instead of the item as a whole:
+
+    @removeItem null, itemData
+
+Finally you can just give the an index number. This will remove an item if it
+exist at that index. If your index number is out of bound than nothing will be
+done:
+
+    @removeItem null, null, index
+
+Because the usage of removeItem above seems so awkward, we have two wrappers for
+this arguments, one for removing item by data and another one to remove by
+index (THIS ARE NOT IN USAGE CURRENTL, PENDING ...):
+
+    :::coffeescript
+    removeItemByData:(itemData)->
+      @removeItem null, itemData
+
+    removeItemByIndex:(index)->
+      @removeItem null, null, index
 
 * **registerItem**:(view, index)
 
@@ -310,6 +348,7 @@ via item instances, like:
     @listController.removeItem itemView.items[2], null, null
 
 This will remove the third item instance in the list. 
+
 You will probably notice the loader which is starting to load if there is no
 items. This is so because we set the `startWithLazyLoader` option to `yes` in
 the constructor of the KDListViewController:
