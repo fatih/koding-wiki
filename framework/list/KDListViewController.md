@@ -136,12 +136,14 @@ itarate over all existing items and removes the first one it matches.
 The secon option is to give a `itemData`. This is like the above, however it
 matches the data of the item instance instead of the item as a whole:
 
+    :::coffeescript
     @removeItem null, itemData
 
 Finally you can just give the an index number. This will remove an item if it
 exist at that index. If your index number is out of bound than nothing will be
 done:
 
+    :::coffeescript
     @removeItem null, null, index
 
 Because the usage of removeItem above seems so awkward, we have two wrappers for
@@ -152,20 +154,41 @@ index (THIS ARE NOT IN USAGE CURRENTL, PENDING ...):
     removeItemByData:(itemData)->
       @removeItem null, itemData
 
+or
+    :::coffeescript
     removeItemByIndex:(index)->
       @removeItem null, null, index
 
 * **registerItem**:(view, index)
 
-What means registering? For
-every item added to the list a 'ItemWasAdded' event is emitted. Our controller
-catched this and calls the `registerItem`() method. 
+What means registering? For every item added to the list a 'ItemWasAdded' event
+is emitted. Our controller catched this and calls the `registerItem()` method.
+The registerItem method takes two arguments. `view` is the item instance and `index`
+is used to populate itemsOrdered array. Basically, this method is called
+automatically every time you use the `addItem()` method. It is updating the
+internal arrays and variables of the controller itself.
+
+This method is useful if you want use anything different than KDListView. You
+might implement your own ListView class and emit the 'ItemWasAdded'.
+KDListViewController will listen to this event and register the view for
+yourself.Or may
 
 * **unregisterItem**:(itemInfo)
 
+Just as the same as registerItem(). For every item removed from the list a
+'ItemIsBeingDestroyed' event is emitted. Our controller cathes this and calls
+the `unregisterItem().` This removes the view and data from the internal
+itemsOrdered and itemsIndexed variables.
+
 * **replaceAllItems**:(items)
 
+Replace the list with the `items` data. This method calls first removeAllItems()
+and then iterates over the `items` array to add all the items in it. 
+
 * **removeAllItems**:
+
+Removes all items from the list. This reset itemsOrdered and itemsIndexed
+variables. 
 
 
 ## mouseevents
