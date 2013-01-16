@@ -48,24 +48,24 @@ a controller. Below are the currently supported methods:
 
 ## helpers
 
-* itemForId:(id)
+* **itemForId**:(id)
 
 Get the item view for the `id` number. This returns the object
 `@itemsIndexed[id]`, which is by default empty. But if we add an item to the
 list, than the controller stores the id together with the view. This is done
 automatically via the controller.
 
-* getItemsOrdered:
+* **getItemsOrdered**:
 
 Get itemsOrdered variable. This variable is an array which contains all our
 views.
 
-* getItemCount:
+* **getItemCount**:
 
 Get the length of itemsOrdered. This gives as the total number of items
 currently available in our list.
 
-* setListView:(listView)
+* **setListView**:(listView)
 
 Sets the listView for our controller. By default the constructor 
 is creating a view that is provided via options.view. If you don't set
@@ -73,67 +73,91 @@ options.view, then a new KDListView is created with `options.viewOptions`
 provided. However you can use this method manually and create set your own
 listView.
 
-* getListView:
+* **getListView**:
 
 Returns the listView.
 
-* forEachItemByIndex:(ids, callback)
+* **forEachItemByIndex**:(ids, callback)
 
 Returns each item for the `ids` array. This array should contain id's. This is
 actually the same as `itemForId`, but it iterates over the `ids` array and call
 back the items.
 
-
 ## modifications
 
-* addItem:(itemData, index, animation)
+* **addItem**:(itemData, index, animation)
 
 Add itemData (modal) to the view. This is a wrapper that calls 
 
     :::coffeescript
     @getListView().addItem itemData, index, animation
 
-Where getListView
+Where getListView() method is described above. Because our listView is a
+KDListView, it calls actually KDListView.addItem(). It takes three arguments,
+however you can omit the second and third argument.
 
-* removeItem:(itemInstance, itemData, index)
-* registerItem:(view, index)
+If you add any Item, than a 'ItemWasAdded' event is emitted via KDListView. If
+you provide any index (second argument), then the item is added into this
+spesific index, if not, it is appended to the end of the list (reminder: __the
+item is added to the beginning of the array if `options.lastToFirst` is enabled
+in the KDListViewController constructor__).
+
+If you provide any animation (third argument) than the item is added via this
+animation. `animation` is defined like:
+
+    :::coffeescript
+    animation = type : "fadeIn/fadeOut", duration : 500 # in msecs
+
+This is a handled via jQuery, thus have a look at jQuery documentation for
+effects:
+[http://api.jquery.com/category/effects/](http://api.jquery.com/category/effects/)
+
+* **removeItem**:(itemInstance, itemData, index)
+
+Removes the item from the list. This takes three arguments, however each one is
+optional. It means you have three methods to remove an item from a list.
+
+* **registerItem**:(view, index)
 
 What means registering? For
 every item added to the list a 'ItemWasAdded' event is emitted. Our controller
 catched this and calls the `registerItem`() method. 
-* unregisterItem:(itemInfo)
-* replaceAllItems:(items)
-* removeAllItems:
+
+* **unregisterItem**:(itemInfo)
+
+* **replaceAllItems**:(items)
+
+* **removeAllItems**:
 
 
 ## mouseevents
 
-* mouseDownHappenedOnItem:(item, event)->
-* mouseUpHappened:(event)->
-* mouseEnterHappenedOnItem:(item, event)->
+* **mouseDownHappenedOnItem**:(item, event)->
+* **mouseUpHappened**:(event)->
+* **mouseEnterHappenedOnItem**:(item, event)->
 
 ## keyevents
 
-* keyDownPerformed:(mainView, event)->
+* **keyDownPerformed**:(mainView, event)->
 
 ## item selection
 
-* selectItem:(item, event = {})->
-* selectItemBelowOrAbove:(event)->
-* selectNextItem:(item, event)->
-* selectPrevItem:(item, event)->
-* deselectAllItems:()->
-* deselectSingleItem:(item)->
-* selectSingleItem:(item)->
-* selectAllItems:()->
-* selectItemsByRange:(item1, item2)->
-* itemSelectionPerformed:->
-* itemDeselectionPerformed:(deselectedItems)->
+* **selectItem**:(item, event = {})->
+* **selectItemBelowOrAbove**:(event)->
+* **selectNextItem**:(item, event)->
+* **selectPrevItem**:(item, event)->
+* **deselectAllItems**:()->
+* **deselectSingleItem**:(item)->
+* **selectSingleItem**:(item)->
+* **selectAllItems**:()->
+* **selectItemsByRange**:(item1, item2)->
+* **itemSelectionPerformed**:->
+* **itemDeselectionPerformed**:(deselectedItems)->
 
 ## lazy loaders
 
-* showLazyLoader:(emitWhenReached = yes)->
-* hideLazyLoader:->
+* **showLazyLoader**:(emitWhenReached = yes)->
+* **hideLazyLoader**:->
 
 # Example app for KDListViewController and KDListView
 
@@ -142,7 +166,9 @@ example app that shows the basic of a KDListViewController and KDListItemView.
 The app looks like:
 
 ![image](KDList.png)
-Here you see that we have alreayd added thre items. The code for this app is:
+
+In the picture you see that we have alreayd added three items. The code for this
+app is:
 
     :::coffeescript
     class MainView extends JView
