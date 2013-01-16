@@ -9,9 +9,7 @@ The constructor takes two arguments:
     :::coffeescript
     constructor:(options = {}, data)
 
-Where options is a object of the following are currently supperted
-
-## options
+Where options is a object of the following are currently supperted:
 
 * **wrapper**: a Boolean. By default it is yes. It sets `options.view` to a new
   KDView class with a css class of name: "listview-wrapper". That means you can use
@@ -33,30 +31,80 @@ Where options is a object of the following are currently supperted
     * for "mousedown" - > @mouseDownHappenedOnItem view, event
     * for "mouseenter" - > @mouseEnterHappenedOnItem view, event
 
-* **startWithLazyLoader**: By default it is no. If enabled shows a [KDLoader](/framework/loader/KDLoader) with a
-  "Loading..." partial text. The loader should be then deactivated or activated
-  manually trough te showLazyLoader() and hideLazyLoader() functions.
-* **itemChildClass**     or= null
-* **itemChildOptions**   or= {}
-* **view**
+* **startWithLazyLoader**: By default it is no. If enabled shows a
+  [KDLoader](/framework/loader/KDLoader) with a "Loading..." partial text. The
+  loader should be then deactivated or activated manually trough te
+  showLazyLoader() and hideLazyLoader() functions.
+* **itemChildClass**: an item Instance. By default it is null. However most of time
+  you want might modify it. Usually this option is set via the sub-option
+  `viewOptions`. We have KDListItemView class that you might extend and use for
+  this.
+* **itemChildOptions**: an Object. By default it is empty. This is needed if you
+  want pass options to the child class (look above). 
+* **view**: 
+
+KDListViewController has many useful methods to modify or change any behaviour of
+a controller. Below are the currently supported methods:
 
 ## helpers
 
-* itemForId:(id)->
-* getItemsOrdered:->
-* getItemCount:->
-* setListView:(listView)->
-* getListView:->
-* forEachItemByIndex:(ids, callback)->
+* itemForId:(id)
+
+Get the item view for the `id` number. This returns the object
+`@itemsIndexed[id]`, which is by default empty. But if we add an item to the
+list, than the controller stores the id together with the view. This is done
+automatically via the controller.
+
+* getItemsOrdered:
+
+Get itemsOrdered variable. This variable is an array which contains all our
+views.
+
+* getItemCount:
+
+Get the length of itemsOrdered. This gives as the total number of items
+currently available in our list.
+
+* setListView:(listView)
+
+Sets the listView for our controller. By default the constructor 
+is creating a view that is provided via options.view. If you don't set
+options.view, then a new KDListView is created with `options.viewOptions`
+provided. However you can use this method manually and create set your own
+listView.
+
+* getListView:
+
+Returns the listView.
+
+* forEachItemByIndex:(ids, callback)
+
+Returns each item for the `ids` array. This array should contain id's. This is
+actually the same as `itemForId`, but it iterates over the `ids` array and call
+back the items.
+
 
 ## modifications
 
-* addItem:(itemData, index, animation)->
-* removeItem:(itemInstance, itemData, index)->
-* registerItem:(view, index)->
-* unregisterItem:(itemInfo)->
-* replaceAllItems:(items)->
-* removeAllItems:->
+* addItem:(itemData, index, animation)
+
+Add itemData (modal) to the view. This is a wrapper that calls 
+
+    :::coffeescript
+    @getListView().addItem itemData, index, animation
+
+Where getListView
+
+* removeItem:(itemInstance, itemData, index)
+* registerItem:(view, index)
+
+What means registering? For
+every item added to the list a 'ItemWasAdded' event is emitted. Our controller
+catched this and calls the `registerItem`() method. 
+* unregisterItem:(itemInfo)
+* replaceAllItems:(items)
+* removeAllItems:
+
 
 ## mouseevents
 
@@ -88,18 +136,6 @@ Where options is a object of the following are currently supperted
 * hideLazyLoader:->
 
 # Example app for KDListViewController and KDListView
-
-Below is an example code:
-
-    :::coffeescript
-    @listController = new KDListViewController
-      lastToFirst     : yes
-      viewOptions     :
-        type          : "example-list"
-        itemClass     : ExampleLgtistItem
-
-Where ExampleListItem is of type
-[KDListItemView](/framework/list/KDListItemView).
 
 KDListViewController is a common component which is used a lot.  Below is an
 example app that shows the basic of a KDListViewController and KDListItemView.
@@ -175,8 +211,8 @@ Here you see that we have alreayd added thre items. The code for this app is:
         #{content}
         """
     
-appView.addSubView new MainView
-  cssClass: "my-koding-app"
+    appView.addSubView new MainView
+      cssClass: "my-koding-app"
 
 Let me explain the code in detail. The code itself is looks like a lot, however
 it's mostly the button and callback part that takes so much space. Anyway as you
@@ -268,5 +304,3 @@ item and removeAllItems button states:
 
     # in "Remove all Items" button callback:
     @listController.showLazyLoader()
-
-
