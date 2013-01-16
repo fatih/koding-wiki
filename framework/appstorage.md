@@ -9,6 +9,8 @@ AppStorage helps you keep key-value pairs in a NOSQL database.
         new KDNotificationView
             title : "Total: " + names.length
 
+Set a value:
+
     :::coffeescript
     appStorage = new AppStorage "storage-name", "1.0"
     appStorage.fetchValue "names", (names) ->
