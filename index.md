@@ -11,6 +11,7 @@ additionsjust sent a pull-request to the [git repo](https://github.com/farslan/k
 ## Misc
 
 * [Create a Hello Koding application](/framework/first_app)
+* [List of open-source Koding apps](/misc/list_of_kdapps)
 * [App Storage](/framework/appstorage)
 * [How to run shell commands](/framework/shell)
 * [Name convention](/misc/name_convention) (NOT FINISHED)
