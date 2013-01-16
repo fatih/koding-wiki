@@ -155,6 +155,7 @@ index (THIS ARE NOT IN USAGE CURRENTL, PENDING ...):
       @removeItem null, itemData
 
 or
+
     :::coffeescript
     removeItemByIndex:(index)->
       @removeItem null, null, index
