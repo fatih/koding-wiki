@@ -25,14 +25,14 @@ Where options is a object of the following are currently supperted
 * **selection**: Boolean. By default it is yes. Listens to "click" event.
   KDListViewController will callback the function @selectItem with the view and
   event.
-* **multipleSelection**: Boolean. By default it is no. If enabled listens to
-  "mousedown" and "mouseenter" events. Which if caught calls the following
+* **multipleSelection**: Boolean. By default it is no.  It basically select the
+  items trough multiple selections. This is done automatically via the methods
+  below. If enabled listens to "mousedown" and "mouseenter" events. Which if
+  caught calls the following
   methods:
     * for "mousedown" - > @mouseDownHappenedOnItem view, event
     * for "mouseenter" - > @mouseEnterHappenedOnItem view, event
 
-  It basically select the items trough multiple selections. This is done
-  automatically via the methods above.
 * **startWithLazyLoader**: By default it is no. If enabled shows a [KDLoader](/framework/loader/KDLoader) with a
   "Loading..." partial text. The loader should be then deactivated or activated
   manually trough te showLazyLoader() and hideLazyLoader() functions.
