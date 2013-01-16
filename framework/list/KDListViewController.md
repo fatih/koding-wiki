@@ -178,7 +178,11 @@ yourself.Or may
 Just as the same as registerItem(). For every item removed from the list a
 'ItemIsBeingDestroyed' event is emitted. Our controller cathes this and calls
 the `unregisterItem().` This removes the view and data from the internal
-itemsOrdered and itemsIndexed variables.
+itemsOrdered and itemsIndexed variables. itemInfo is an object of view and
+index. Which can be accessed like:
+
+    :::coffeescript
+    {index, view} = itemInfo
 
 * **replaceAllItems**:(items)
 
