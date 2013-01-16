@@ -19,10 +19,23 @@ Where options is a object of the following are currently supperted
   list. If you set it to `no`, then the listView is set to `options.view`.
 * **scrollView**: Boolean. By default it is yes. The listView is added as a
   subView to a KDScrollView. If you don't want this you can disable it.
-* **keyNav**: Boolean. By default it is no.
-* **multipleSelection**: Boolean.By default it is no.
-* **selection**: Boolean. By default it is yes.
-* **startWithLazyLoader**: By default it is no.
+* **keyNav**: Boolean. By default it is no. If enabled, listview is listening to
+  a "KeyDownOnList" event, which fires the keyDownPerformed function for the
+  listView itself.
+* **selection**: Boolean. By default it is yes. Listens to "click" event.
+  KDListViewController will callback the function @selectItem with the view and
+  event.
+* **multipleSelection**: Boolean. By default it is no. If enabled listens to
+  "mousedown" and "mouseenter" events. Which if caught calls the following
+  methods:
+    * for "mousedown" - > @mouseDownHappenedOnItem view, event
+    * for "mouseenter" - > @mouseEnterHappenedOnItem view, event
+
+  It basically select the items trough multiple selections. This is done
+  automatically via the methods above.
+* **startWithLazyLoader**: By default it is no. If enabled shows a [KDLoader](/framework/loader/KDLoader) with a
+  "Loading..." partial text. The loader should be then deactivated or activated
+  manually trough te showLazyLoader() and hideLazyLoader() functions.
 * **itemChildClass**     or= null
 * **itemChildOptions**   or= {}
 * **view**
