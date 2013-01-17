@@ -13,7 +13,7 @@ are some opensource Koding apps you could fork, modify and learn from:
 [https://github.com/fkadeveloper/GitHubDashboard.kdapp](https://github.com/fkadeveloper/GitHubDashboard.kdapp)
 
 **Kodepad** - 
-[https://github.com/fkadeveloper/Previewer.kdapp](https://github.com/fkadeveloper/Previewer.kdapp)
+[https://github.com/fkadeveloper/kodepad.kdapp](https://github.com/fkadeveloper/kodepad.kdapp)
 
 **ImageEditor** - 
 [https://github.com/fatihacet/ImageEditor.kdapp](https://github.com/fatihacet/ImageEditor.kdapp)
