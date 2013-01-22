@@ -22,9 +22,9 @@ The constructor takes two arguments:
     constructor:(options = {}, data)
 
 An internal `@items` array is declared, which is by default empty (if not
-overrided). This array stores all item instance. The methods explained below are
-all based on modification of this internal array. Thus if I say "it is iterating
-over @items", than it means I'm mentioning this array.
+overrided). This array stores all item instances. The methods, that will be
+explained below are all based on modification of this internal array. Thus if I
+say "it is iterating over @items", than it means I'm mentioning this array.
 
 The following options are supported:
 
@@ -41,7 +41,7 @@ The following options are supported:
   it get added to the predefined css classes (as seen above when explaining
   type)
 
-THe following methods are methods:
+The following methods are methods:
 
 * **empty:**
 
