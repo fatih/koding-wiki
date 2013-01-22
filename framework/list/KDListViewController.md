@@ -273,7 +273,7 @@ is set to yes, which propagates the event 'LazyLoadThresholdReached'.
 
 If startWithLazyLoader is enabled, this method is used to hide the loader.
 
-# Example app for KDListViewController and KDListView
+# Example app for KDListViewController and KDListItemView
 
 KDListViewController is a common component which is used a lot.  Below is an
 example app that shows the basic of a KDListViewController and KDListItemView.

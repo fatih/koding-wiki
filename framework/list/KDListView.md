@@ -12,7 +12,7 @@ KDListView is called(which is done by
 "itemClass" is checked for existing. If it exists than the itemInstance is set
 to this class, if there is no "itemClass" than the class for the item itself is
 set to [KDListItemView](/framework/list/KDListItemView). There is an example
-Katoding app with sample code on the
+Koding app with sample code on the
 at[KDListViewController](/framework/list/KDListViewController) class which shows
 this in action.
 
