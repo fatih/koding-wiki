@@ -263,7 +263,15 @@ Propagates the `ItemDeselectionPerformed` event, together with an object of
 ## lazy loaders
 
 * **showLazyLoader**:(emitWhenReached = yes)->
+
+If startWithLazyLoader is enabled, this method is used to show the loader. This
+method is used when ever you want to show the loader again after hiding the
+loader via `hideLazyLoader()` method. By default the variable `emitWhenReached`
+is set to yes, which propagates the event 'LazyLoadThresholdReached'.
+
 * **hideLazyLoader**:->
+
+If startWithLazyLoader is enabled, this method is used to hide the loader.
 
 # Example app for KDListViewController and KDListView
 
