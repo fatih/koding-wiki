@@ -172,7 +172,7 @@ internal arrays and variables of the controller itself.
 This method is useful if you want use anything different than KDListView. You
 might implement your own ListView class and emit the 'ItemWasAdded'.
 KDListViewController will listen to this event and register the view for
-yourself.Or may
+yourself. 
 
 * **unregisterItem**:(itemInfo)
 
@@ -195,30 +195,70 @@ and then iterates over the `items` array to add all the items in it.
 Removes all items from the list. This reset itemsOrdered and itemsIndexed
 variables. 
 
-
-## mouseevents
-
-* **mouseDownHappenedOnItem**:(item, event)->
-* **mouseUpHappened**:(event)->
-* **mouseEnterHappenedOnItem**:(item, event)->
-
-## keyevents
-
-* **keyDownPerformed**:(mainView, event)->
-
 ## item selection
 
 * **selectItem**:(item, event = {})->
+
+This function is used by the internal controller. It is used to return the
+selected items. For example if use the method `selectNextItem` (with an argument
+of a specific item), then the next item will be selected and returned. This is
+done by this function (`selectItem`). This uses internally the
+`selectSingleItem` method, whereupon this method propagates the
+"ItemSelectionPerformed" event.
+
 * **selectItemBelowOrAbove**:(event)->
+
+This is internally used by the controller, which acts on the events `down`
+and `up`. After selecting the items `selectSingleItem` is performed on the
+items.
+
 * **selectNextItem**:(item, event)->
+
+Return the next item of the passed `item` argument. It uses `selectItem`
+internally.  The method `selectSingleItem` is performed on all item.
+
 * **selectPrevItem**:(item, event)->
+
+Return the previous item of the passed `item` argument. It uses `selectItem`
+internally. The method `selectSingleItem` is performed on the item.
+
 * **deselectAllItems**:()->
+
+Removes all the selections (it clears the `selectedItems` array).
+
 * **deselectSingleItem**:(item)->
+
+Deselect the `item` passed.
+
 * **selectSingleItem**:(item)->
+
+Selects a single `item`, unless it is not already selected. If it is not
+selected then a this `item` is added to the `selectedItems` array. The `item` is
+highlighted and the method `itemSelectionPerformed()` is called.
+
 * **selectAllItems**:()->
+
+Select all items. The method `selectSingleItem` is called on all items.
+
 * **selectItemsByRange**:(item1, item2)->
+
+Select all items between `item1` and `item2`. The method `selectSingleItem` is
+than performed on all the items selected and finally the method
+`itemSelectionPerformed` is called.
+
 * **itemSelectionPerformed**:->
+
+Propagates the `ItemSelectionPerformed` event, together with an object of 
+
+    event : @lastEvent
+    items : @selectedItems
+
 * **itemDeselectionPerformed**:(deselectedItems)->
+
+Propagates the `ItemDeselectionPerformed` event, together with an object of 
+
+    event : @lastEvent
+    items : deselectedItems
 
 ## lazy loaders
 
