@@ -22,6 +22,7 @@ additionsjust sent a pull-request to the [git repo](https://github.com/farslan/k
 * [KDObject](/core/KDObject) (NOT FINISHED)
 * [KDView](/core/KDView) (IN PROGRESS)
 * [JView](/core/JView)
+* [KDViewController](/core/KDViewController)
 
 ## Components
 
