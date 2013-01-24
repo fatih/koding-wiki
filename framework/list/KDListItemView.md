@@ -35,11 +35,11 @@ The following options are supported:
   KDListItemView getData() method. If not defined, then a custom partial with
   the following content is set:
 
-    :::coffeescript
-    "<div class='kdlistitemview-default-content'>
+    :::html
+    <div class='kdlistitemview-default-content'>
       <p>This is a default partial of <b>KDListItemView</b>,
       you need to override this partial to have your custom content here.</p>
-    </div>"
+    </div>
 
 * **childOptions**: an Object. Passed to the custom "childClass" constructors as
   the "option" argument, where "data" is passed direclty from the KDListItemView
