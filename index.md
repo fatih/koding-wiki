@@ -67,9 +67,9 @@ additionsjust sent a pull-request to the [git repo](https://github.com/farslan/k
 * [KDFormViewWithFields](/framework/forms/KDFormViewWithFields)
 
 ### Tree
-* [JTreeViewController](/framework/list/JTreeViewController) (IN PROGRESS)
-* [JTreeView](/framework/list/JTreeView) (IN PROGRESS)
-* [JTreeItemView](/framework/list/JTreeItemView) (IN PROGRESS)
+* [JTreeViewController](/framework/tree/JTreeViewController) (IN PROGRESS)
+* [JTreeView](/framework/tree/JTreeView) (IN PROGRESS)
+* [JTreeItemView](/framework/tree/JTreeItemView) (IN PROGRESS)
 
 ### Menus
 * [JContextMenu](/framework/menus/JContextMenu) (NOT FINISHED)
