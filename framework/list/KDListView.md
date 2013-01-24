@@ -53,10 +53,80 @@ existing item. After that the `@items` is set to an empty array.
 Emit's the event "KeyDownOnList". This is catched by the KDListViewController to
 handle the selection of items inside the KDListView.
 
-* **addHiddenItem:(item, index, animation)**
 * **addItem:(itemData, index, animation)**
+
+Add `itemData` to the `@item` array. This is calling this wrapper:
+
+    :::coffeescript
+    @addItemView itemInstance, index, animation
+
+where `itemInstance` is a [KDListItemView](/framework/list/KDListItemView).
+If you provide any index (second argument), then the item is added into this
+spesific index, if not, it is appended to the end of the list (reminder: __the
+item is added to the beginning of the array if `options.lastToFirst` is enabled
+in the KDListView constructor__).
+
+If you provide any animation (third argument) than the item is added via this
+animation. `animation` is defined like:
+
+    :::coffeescript
+    animation = type : "fadeIn/fadeOut", duration : 500 # in msecs
+
+This is a handled via jQuery, thus have a look at jQuery documentation for
+effects:
+[http://api.jquery.com/category/effects/](http://api.jquery.com/category/effects/)
+
+* **addHiddenItem:(item, index, animation)**
+
+It's basically the same as `addItem` except that following options are applied
+to the item instance (which is a
+[KDListItemView](/framework/list/KDListItemView)).
+
+    :::coffeescript
+    viewOptions :
+      isHidden  : yes
+      cssClass  : 'hidden-item'
+
 * **addItemView:(itemInstance,index,animation)**
-* **appendItem:(itemInstance, animation)**
-* **appendItemAtIndex:(itemInstance,index,animation)**
+
+If used, an event named `ItemWasAdded` is emitted too. Add `itemInstance` to the
+`@items` array. The `index` and `animation` are explained in the `addItem`
+method. It's calling the following wrapper if index is available:
+
+    :::coffeescript
+    @appendItemAtIndex itemInstance, index, animation
+
+if index is not available the following wrapper method is called:
+
+    :::coffeescript
+    @appendItem itemInstance, animation
+
 * **removeItem:(itemInstance, itemData, index)**
-* **destroy:(animated = no, animationType = "slideUp", duration = 100)**
+
+It takes three arguments. These are :
+
+  * itemInstance: the item view 
+  * itemData: the item data 
+  * index: the index of the list
+
+Each one is optional. It means you have three methods to remove an item from a
+list. You can just give the item view (instance) itself. The method will try to
+itarate over all existing items and removes the first one it matches.
+
+    :::coffeescript
+    @removeItem itemInstance
+
+The secon option is to give a `itemData`. This is like the above, however it
+matches the data of the item instance instead of the item as a whole:
+
+    :::coffeescript
+    @removeItem null, itemData
+
+Finally you can just give the an index number. This will remove an item if it
+exist at that index. If your index number is out of bound than nothing will be
+done:
+
+    :::coffeescript
+    @removeItem null, null, index
+
+Finally the 'ItemIsBeingDestroyed' event is emitted.
