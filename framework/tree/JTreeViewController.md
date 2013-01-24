@@ -35,93 +35,93 @@ with custom items (our file tree is written with this class!)
 
 ## helpers
 
-**initTree:(nodes)->**:
-**logTreeStructure:->**
-**getNodeId:(nodeData)->**
-**getNodePId:(nodeData)->**
-**repairIds:(nodeData)->**
-**isNodeVisible:(nodeView)->**
-**areSibling:(node1, node2)->**
+* **initTree:(nodes)->**:
+* **logTreeStructure:->**
+* **getNodeId:(nodeData)->**
+* **getNodePId:(nodeData)->**
+* **repairIds:(nodeData)->**
+* **isNodeVisible:(nodeView)->**
+* **areSibling:(node1, node2)->**
 
 ## decorators
 
-**setFocusState:->**
-**setBlurState:->**
+* **setFocusState:->**
+* **setBlurState:->**
 
 ## crud operations for nodes
 
-**addNode:(nodeData, index)->**
-**addNodes:(nodes)->**
-**removeNode:(id)->**
-**removeNodeView:(nodeView)->**
-**removeAllNodes:->**
-**removeChildNodes:(id)->**
-**nodeWasAdded:(nodeView)->**
-**getChildNodes :(aParentNode)->**
-**addIndexedNode:(nodeData)->**
-**removeIndexedNode:(nodeData)->**
+* **addNode:(nodeData, index)->**
+* **addNodes:(nodes)->**
+* **removeNode:(id)->**
+* **removeNodeView:(nodeView)->**
+* **removeAllNodes:->**
+* **removeChildNodes:(id)->**
+* **nodeWasAdded:(nodeView)->**
+* **getChildNodes :(aParentNode)->**
+* **addIndexedNode:(nodeData)->**
+* **removeIndexedNode:(nodeData)->**
 
 ## creating lists
 
-**registerListData:(node)->**
-**createList:(listId, listItems)->**
-**addSubList:(nodeView, id)->**
+* **registerListData:(node)->**
+* **createList:(listId, listItems)->**
+* **addSubList:(nodeView, id)->**
 
 ## registering listeners
 
-**setMainListeners:->**
-**setListenersForList:(listId)->**
-**setItemListeners:(view, index)->**
+* **setMainListeners:->**
+* **setListenersForList:(listId)->**
+* **setItemListeners:(view, index)->**
 
 ## node selection
 
-**organizeSelectedNodes:(listController, nodes, event = {})->**
-**deselectNodes:(listController, nodes, event)->**
-**deselectAllNodes:(exceptThisController)->**
-**selectNode:(nodeView, event, setFocus = yes)->**
-**deselectNode:(nodeView, event)->**
-**selectFirstNode:->**
-**selectNodesByRange:(node1, node2)->**
+* **organizeSelectedNodes:(listController, nodes, event = {})->**
+* **deselectNodes:(listController, nodes, event)->**
+* **deselectAllNodes:(exceptThisController)->**
+* **selectNode:(nodeView, event, setFocus = yes)->**
+* **deselectNode:(nodeView, event)->**
+* **selectFirstNode:->**
+* **selectNodesByRange:(node1, node2)->**
 
 ## collapse / expand
 
-**toggle:(nodeView)->**
-**expand:(nodeView)->**
-**collapse:(nodeView)->**
+* **toggle:(nodeView)->**
+* **expand:(nodeView)->**
+* **collapse:(nodeView)->**
 
 ## dnd ui feedbacks
 
-**showDragOverFeedback: do ->**
-**clearDragOverFeedback: do ->**
-**clearAllDragFeedback: ->**
+* **showDragOverFeedback: do ->**
+* **clearDragOverFeedback: do ->**
+* **clearAllDragFeedback: ->**
 
 ## handling mouse events
 
-**mouseEventHappened:(nodeView, event)->**
-**dblClick:(nodeView, event)->**
-**click:(nodeView, event)->**
-**contextMenu:(nodeView, event)->**
-**mouseDown:(nodeView, event)->**
-**mouseUp:(event)->**
-**mouseEnter:(nodeView, event)->**
+* **mouseEventHappened:(nodeView, event)->**
+* **dblClick:(nodeView, event)->**
+* **click:(nodeView, event)->**
+* **contextMenu:(nodeView, event)->**
+* **mouseDown:(nodeView, event)->**
+* **mouseUp:(event)->**
+* **mouseEnter:(nodeView, event)->**
 
 ## handling dnd
 
-**dragStart: (nodeView, event)->**
-**dragEnter: (nodeView, event)->**
-**dragLeave: (nodeView, event)->**
-**dragOver: (nodeView, event)->**
-**dragEnd: (nodeView, event)->**
-**drop: (nodeView, event)->**
+* **dragStart: (nodeView, event)->**
+* **dragEnter: (nodeView, event)->**
+* **dragLeave: (nodeView, event)->**
+* **dragOver: (nodeView, event)->**
+* **dragEnd: (nodeView, event)->**
+* **drop: (nodeView, event)->**
 
 ## handling key events
 
-**setKeyView:->**
-**keyEventHappened:(event)->**
-**performDownKey:(nodeView, event)->**
-**performUpKey:(nodeView, event)->**
-**performRightKey:(nodeView, event)->**
-**performLeftKey:(nodeView, event)->**
-**performBackspaceKey:(nodeView, event)->**
-**performEnterKey:(nodeView, event)->**
-**performEscapeKey:(nodeView, event)->**
+* **setKeyView:->**
+* **keyEventHappened:(event)->**
+* **performDownKey:(nodeView, event)->**
+* **performUpKey:(nodeView, event)->**
+* **performRightKey:(nodeView, event)->**
+* **performLeftKey:(nodeView, event)->**
+* **performBackspaceKey:(nodeView, event)->**
+* **performEnterKey:(nodeView, event)->**
+* **performEscapeKey:(nodeView, event)->**
