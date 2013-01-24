@@ -25,6 +25,8 @@ overrided). This array stores all item instances. The methods, that will be
 explained below are all based on modification of this internal array. Thus if I
 say "it is iterating over @items", than it means I'm mentioning this array.
 
+## options
+
 The following options are supported:
 
 * **type**: a String. By default it is set to: "default". It used for overriding
@@ -39,6 +41,8 @@ The following options are supported:
 * **cssClass**: a String. By default it is empty. If a string is assigned than
   it get added to the predefined css classes (as seen above when explaining
   type)
+
+## methods
 
 The following methods are methods:
 
