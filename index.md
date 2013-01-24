@@ -25,7 +25,7 @@ additionsjust sent a pull-request to the [git repo](https://github.com/farslan/k
 
 ## Components
 
-### [Input](/framework/input)
+### Input
 * [KDInputView](/framework/input/KDInputView)
 * [KDHitEnterInputView](/framework/input/KDHitEnterInputView)
 * [KDInputSwitch](/framework/input/KDInputSwitch)
@@ -36,43 +36,43 @@ additionsjust sent a pull-request to the [git repo](https://github.com/farslan/k
 * [KDSelectBox](/framework/input/KDSelectBox)
 * [KDWmdInput](/framework/input/KDWmdInput)
 
-### [Misc](/framework/misc)
+### Misc
 * [KDImage](/framework/image/KDImage)
 * [KDHeaderView](/framework/header/KDHeaderView)
 * [KDLoaderView](/framework/loader/KDLoaderView)
 
-### [Notification](/framework/notification)
+### Notification
 * [KDNotificationView](/framework/notification/KDNotificationView)
 
-### [Dialog](/framework/dialog)
+### Dialog
 * [KDDialogView](/framework/dialog/KDDialogView)
 
-### [Buttons](/framework/buttons)
+### Buttons
 * [KDButtonView](/framework/buttons/KDButtonView)
 * [KDButtonGroupView](/framework/buttons/KDButtonGroupView)
 * [KDButtonMenu](/framework/buttons/KDButtonMenu)
 * [KDButtonViewWithMenu](/framework/buttons/KDButtonViewWithMenu)
 
-### [List](/framework/list)
+### List
 * [KDListViewController](/framework/list/KDListViewController)
 * [KDListView](/framework/list/KDListView)
 * [KDListItemView](/framework/list/KDListItemView)
 
-### [Modals](/framework/modals)
+### Modals
 * [KDModalView](/framework/modals/KDModalView)
 * [KDModalViewWithForms](/framework/modals/KDModalViewWithForms)
 
-### [Forms](/framework/forms)
+### Forms
 * [KDFormView](/framework/forms/KDFormView)
 * [KDFormViewWithFields](/framework/forms/KDFormViewWithFields)
 
-### [Menus](/framework/menus)
+### Menus
 * [JContextMenu](/framework/menus/JContextMenu) (NOT FINISHED)
 * [JContextMenuItem](/framework/menus/JContextMenuItem) (NOT FINISHED)
 * [JContextMenuTreeView](/framework/menus/JContextMenuTreeView) (NOT FINISHED)
 * [JContextMenuTreeViewController](/framework/menus/JContextMenuTreeViewController) (NOT FINISHED)
 
-### [Autocomplete](/framework/autocomplete)
+### Autocomplete
 * [KDAutoComplete](/framework/autocomplete/KDAutoComplete) (NOT FINISHED)
 * [KDAutoCompleteController](/framework/autocomplete/KDAutoCompleteController) (NOT FINISHED)
 * [KDAutoCompleteListItemView](/framework/autocomplete/KDAutoCompleteListItemView) (NOT FINISHED)
