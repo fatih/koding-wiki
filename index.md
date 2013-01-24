@@ -55,7 +55,7 @@ additionsjust sent a pull-request to the [git repo](https://github.com/farslan/k
 
 ### [List](/framework/list)
 * [KDListViewController](/framework/list/KDListViewController)
-* [KDListView](/framework/list/KDListView) (IN PROGRESS)
+* [KDListView](/framework/list/KDListView)
 * [KDListItemView](/framework/list/KDListItemView) (NOT FINISHED)
 
 ### [Menus](/framework/menus)
