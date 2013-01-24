@@ -130,7 +130,7 @@ supported options:
 * delegate: a KDView Instance. By default it is null.
 
 * bind: a String of space seperated javascript dom events to be listened on
-  instantiated view. Any event added will be atteced to the default list which
+  instantiated view. Any event added will be attached to the default list which
   is:
 
         "mousedown mouseup click dblclick paste"
