@@ -14,7 +14,6 @@ additionsjust sent a pull-request to the [git repo](https://github.com/farslan/k
 * [List of open-source Koding apps](/misc/list_of_kdapps)
 * [App Storage](/framework/appstorage)
 * [How to run shell commands](/framework/shell)
-* [Name convention](/misc/name_convention) (NOT FINISHED)
 
 ## Core 
 
@@ -59,12 +58,6 @@ additionsjust sent a pull-request to the [git repo](https://github.com/farslan/k
 * [KDListView](/framework/list/KDListView)
 * [KDListItemView](/framework/list/KDListItemView)
 
-### [Menus](/framework/menus)
-* [JContextMenu](/framework/menus/JContextMenu) (NOT FINISHED)
-* [JContextMenuItem](/framework/menus/JContextMenuItem) (NOT FINISHED)
-* [JContextMenuTreeView](/framework/menus/JContextMenuTreeView) (NOT FINISHED)
-* [JContextMenuTreeViewController](/framework/menus/JContextMenuTreeViewController) (NOT FINISHED)
-
 ### [Modals](/framework/modals)
 * [KDModalView](/framework/modals/KDModalView)
 * [KDModalViewWithForms](/framework/modals/KDModalViewWithForms)
@@ -72,6 +65,12 @@ additionsjust sent a pull-request to the [git repo](https://github.com/farslan/k
 ### [Forms](/framework/forms)
 * [KDFormView](/framework/forms/KDFormView)
 * [KDFormViewWithFields](/framework/forms/KDFormViewWithFields)
+
+### [Menus](/framework/menus)
+* [JContextMenu](/framework/menus/JContextMenu) (NOT FINISHED)
+* [JContextMenuItem](/framework/menus/JContextMenuItem) (NOT FINISHED)
+* [JContextMenuTreeView](/framework/menus/JContextMenuTreeView) (NOT FINISHED)
+* [JContextMenuTreeViewController](/framework/menus/JContextMenuTreeViewController) (NOT FINISHED)
 
 ### [Autocomplete](/framework/autocomplete)
 * [KDAutoComplete](/framework/autocomplete/KDAutoComplete) (NOT FINISHED)
