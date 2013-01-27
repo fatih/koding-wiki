@@ -11,7 +11,7 @@ with custom items (our file tree is written with this class!)
   is a KDListViewController.
 * **treeItemClass**: a KDView based on KDListItemView. By default it is a
   JTreeItemView.
-* **listViewClass**: a KDView based on KDItemView. By default is is JTreeView.
+* **listViewClass**: a KDView based on KDListView. By default is is JTreeView.
 * **itemChildClass**: a KDView class. This is used to define the item class of
   the listViewClass defined above. By default it is empty.
 * **itemChildOptions**: an Object. This is passed as the "options" parameter to

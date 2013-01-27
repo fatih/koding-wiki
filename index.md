@@ -17,11 +17,17 @@ additionsjust sent a pull-request to the [git repo](https://github.com/farslan/k
 
 ## Core 
 
+* [JView](/core/JView)
+* [KDController](/core/KDController) (NOT FINISHED)
+* [KDCustomHTMLView](/core/KDCustomHTMLView) (NOT FINISHED)
 * [KDEventEmitter](/core/KDEventEmitter)
 * [KDObject](/core/KDObject) (NOT FINISHED)
+* [KDRouter](/core/KDRouter) (NOT FINISHED)
+* [KDScrollView](/core/KDScrollView) (NOT FINISHED)
+* [KDViewController](/core/KDViewController) (NOT FINISHED)
 * [KDView](/core/KDView) (IN PROGRESS)
-* [JView](/core/JView)
-* [KDViewController](/core/KDViewController)
+* [KDWindowController](/core/KDWindowController) (NOT FINISHED)
+* [Utils/Helper Functions](/core/utils) (NOT FINISHED)
 
 ## Components
 
@@ -35,6 +41,7 @@ additionsjust sent a pull-request to the [git repo](https://github.com/farslan/k
 * [KDInputViewWithPreview](/framework/input/KDInputViewWithPreview)
 * [KDSelectBox](/framework/input/KDSelectBox)
 * [KDWmdInput](/framework/input/KDWmdInput)
+* [KDMultipleChoice](/framework/input/KDMultipleChoice) (NOT FINISHED)
 
 ### Misc
 * [KDImage](/framework/image/KDImage)
