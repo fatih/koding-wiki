@@ -8,7 +8,7 @@ cvs-exclude: true
 
 # Building
 document-extensions: [.md, .mdown, .markdown, .wiki, .text]
-generate-listing: sometimes
+generate-listing: always
 listing-filename: "_list.html"
 
 # Rendering
