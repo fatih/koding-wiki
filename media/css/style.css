@@ -74,10 +74,10 @@ dl {
 
 ul {
   margin-top: 0; }
-  ul li {
-    list-style: square outside; }
-  ul ul {
-    margin-bottom: 0; }
+ul li {
+  list-style: disc outside; }
+ul ul {
+  margin-bottom: 0; }
 
 pre {
   border-left: 1px solid gray;
@@ -143,7 +143,7 @@ pre {
 
 body {
   font-size: 14px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
+  font-family: Helvetica, Arial, Geneva, sans-serif;
   line-height: 21px; }
   body #breadcrumbs li {
     color: #aaa;
@@ -199,5 +199,5 @@ code {
 
 pre {
   font-family: Menlo, 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, 'Courier 10 Pitch', 'Courier New', monospace;
-  font-size: 11px;
-  line-height: 18px; }
+  font-size: 12px;
+  line-height: 20px; }
