@@ -85,7 +85,9 @@ additionsjust sent a pull-request to the [git repo](https://github.com/farslan/k
 * [KDSplitView](/framework/split/KDSplitView) (NOT FINISHED)
 
 ### Tab
+* [KDTabView](/framework/tab/KDTabView) (NOT FINISHED)
 * [KDTabPaneView](/framework/tab/KDTabPaneView) (NOT FINISHED)
+* [KDTabHandleView](/framework/tab/KDTabHandleView) (NOT FINISHED)
 * [KDTabViewController](/framework/tab/KDTabViewController) (NOT FINISHED)
 * [KDTabViewWithForms](/framework/tab/KDTabViewWithForms) (NOT FINISHED)
 
