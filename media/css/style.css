@@ -3,14 +3,13 @@ body {
   margin: 0 auto;
   width: 850px; }
 
-/*
+
 body #content {
-background-color: snow;
+border: solid 0.1em lightgrey;
 }
-*/
+
   
 body #breadcrumbs, body #content, body #footer {
-  background-color: snow;
   clear: both;
   float: left;
   overflow: hidden;
