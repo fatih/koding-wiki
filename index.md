@@ -93,7 +93,6 @@ additionsjust sent a pull-request to the [git repo](https://github.com/farslan/k
 
 ### Tooltip
 * [KDToolTip](/framework/tooltip/KDToolTip) (NOT FINISHED)
-* [KDToolTipMenu](/framework/tooltip/KDToolTipMenu) (NOT FINISHED)
 
 ### Upload
 * [KDFileUploadView](/framework/upload/KDFileUploadView) (NOT FINISHED)
