@@ -18,16 +18,16 @@ additionsjust sent a pull-request to the [git repo](https://github.com/farslan/k
 ## Core 
 
 * [JView](/core/JView)
-* [KDController](/core/KDController) (NOT FINISHED)
-* [KDCustomHTMLView](/core/KDCustomHTMLView) (NOT FINISHED)
+* [KDController](/core/KDController) __(incomplete)__
+* [KDCustomHTMLView](/core/KDCustomHTMLView) __(incomplete)__
 * [KDEventEmitter](/core/KDEventEmitter)
-* [KDObject](/core/KDObject) (NOT FINISHED)
-* [KDRouter](/core/KDRouter) (NOT FINISHED)
-* [KDScrollView](/core/KDScrollView) (NOT FINISHED)
-* [KDViewController](/core/KDViewController) (NOT FINISHED)
-* [KDView](/core/KDView) (IN PROGRESS)
-* [KDWindowController](/core/KDWindowController) (NOT FINISHED)
-* [Utils/Helper Functions](/core/utils) (NOT FINISHED)
+* [KDObject](/core/KDObject) (incomplete)
+* [KDRouter](/core/KDRouter) (incomplete)
+* [KDScrollView](/core/KDScrollView) (incomplete)
+* [KDViewController](/core/KDViewController) (incomplete)
+* [KDView](/core/KDView) (incomplete)
+* [KDWindowController](/core/KDWindowController) (incomplete)
+* [Utils/Helper Functions](/core/utils) (incomplete)
 
 ## Components
 
@@ -41,7 +41,7 @@ additionsjust sent a pull-request to the [git repo](https://github.com/farslan/k
 * [KDInputViewWithPreview](/framework/input/KDInputViewWithPreview)
 * [KDSelectBox](/framework/input/KDSelectBox)
 * [KDWmdInput](/framework/input/KDWmdInput)
-* [KDMultipleChoice](/framework/input/KDMultipleChoice) (NOT FINISHED)
+* [KDMultipleChoice](/framework/input/KDMultipleChoice) (incomplete)
 
 ### Misc
 * [KDImage](/framework/image/KDImage)
@@ -56,7 +56,7 @@ additionsjust sent a pull-request to the [git repo](https://github.com/farslan/k
 
 ### Buttons
 * [KDButtonView](/framework/buttons/KDButtonView)
-* [KDToggleButton](/framework/buttons/KDToggleButton) (NOT FINISHED)
+* [KDToggleButton](/framework/buttons/KDToggleButton) (incomplete)
 * [KDButtonGroupView](/framework/buttons/KDButtonGroupView)
 * [KDButtonMenu](/framework/buttons/KDButtonMenu)
 * [KDButtonViewWithMenu](/framework/buttons/KDButtonViewWithMenu)
@@ -75,40 +75,40 @@ additionsjust sent a pull-request to the [git repo](https://github.com/farslan/k
 * [KDFormViewWithFields](/framework/forms/KDFormViewWithFields)
 
 ### Tree
-* [JTreeViewController](/framework/tree/JTreeViewController) (IN PROGRESS)
-* [JTreeView](/framework/tree/JTreeView) (IN PROGRESS)
-* [JTreeItemView](/framework/tree/JTreeItemView) (IN PROGRESS)
+* [JTreeViewController](/framework/tree/JTreeViewController) (...)
+* [JTreeView](/framework/tree/JTreeView) (...)
+* [JTreeItemView](/framework/tree/JTreeItemView) (...)
 
 ### Split
-* [KDSplitViewPanel](/framework/split/KDSplitViewPanel) (NOT FINISHED)
-* [KDSplitResizer](/framework/split/KDSplitResizer) (NOT FINISHED)
-* [KDSplitView](/framework/split/KDSplitView) (NOT FINISHED)
+* [KDSplitViewPanel](/framework/split/KDSplitViewPanel) (incomplete)
+* [KDSplitResizer](/framework/split/KDSplitResizer) (incomplete)
+* [KDSplitView](/framework/split/KDSplitView) (incomplete)
 
 ### Tab
-* [KDTabView](/framework/tab/KDTabView) (NOT FINISHED)
-* [KDTabPaneView](/framework/tab/KDTabPaneView) (NOT FINISHED)
-* [KDTabHandleView](/framework/tab/KDTabHandleView) (NOT FINISHED)
-* [KDTabViewController](/framework/tab/KDTabViewController) (NOT FINISHED)
-* [KDTabViewWithForms](/framework/tab/KDTabViewWithForms) (NOT FINISHED)
+* [KDTabView](/framework/tab/KDTabView) (incomplete)
+* [KDTabPaneView](/framework/tab/KDTabPaneView) (incomplete)
+* [KDTabHandleView](/framework/tab/KDTabHandleView) (incomplete)
+* [KDTabViewController](/framework/tab/KDTabViewController) (incomplete)
+* [KDTabViewWithForms](/framework/tab/KDTabViewWithForms) (incomplete)
 
 ### Tooltip
-* [KDToolTip](/framework/tooltip/KDToolTip) (NOT FINISHED)
+* [KDToolTip](/framework/tooltip/KDToolTip) (incomplete)
 
 ### Upload
-* [KDFileUploadView](/framework/upload/KDFileUploadView) (NOT FINISHED)
-* [KDImageUploadView](/framework/upload/KDImageUploadView) (NOT FINISHED)
+* [KDFileUploadView](/framework/upload/KDFileUploadView) (incomplete)
+* [KDImageUploadView](/framework/upload/KDImageUploadView) (incomplete)
 
 ### Menus
-* [JContextMenu](/framework/menus/JContextMenu) (NOT FINISHED)
-* [JContextMenuItem](/framework/menus/JContextMenuItem) (NOT FINISHED)
-* [JContextMenuTreeView](/framework/menus/JContextMenuTreeView) (NOT FINISHED)
-* [JContextMenuTreeViewController](/framework/menus/JContextMenuTreeViewController) (NOT FINISHED)
+* [JContextMenu](/framework/menus/JContextMenu) (incomplete)
+* [JContextMenuItem](/framework/menus/JContextMenuItem) (incomplete)
+* [JContextMenuTreeView](/framework/menus/JContextMenuTreeView) (incomplete)
+* [JContextMenuTreeViewController](/framework/menus/JContextMenuTreeViewController) (incomplete)
 
 ### Autocomplete
-* [KDAutoComplete](/framework/autocomplete/KDAutoComplete) (NOT FINISHED)
-* [KDAutoCompleteController](/framework/autocomplete/KDAutoCompleteController) (NOT FINISHED)
-* [KDAutoCompleteListItemView](/framework/autocomplete/KDAutoCompleteListItemView) (NOT FINISHED)
-* [KDAutoCompleteListView](/framework/autocomplete/KDAutoCompleteListView) (NOT FINISHED)
-* [KDAutoCompletedItem](/framework/autocomplete/KDAutoCompletedItem) (NOT FINISHED)
-* [KDSimpleAutocomplete](/framework/autocomplete/KDSimpleAutocomplete) (NOT FINISHED)
-* [KDMultipleInputView](/framework/autocomplete/KDMultipleInputView) (NOT FINISHED)
+* [KDAutoComplete](/framework/autocomplete/KDAutoComplete) (incomplete)
+* [KDAutoCompleteController](/framework/autocomplete/KDAutoCompleteController) (incomplete)
+* [KDAutoCompleteListItemView](/framework/autocomplete/KDAutoCompleteListItemView) (incomplete)
+* [KDAutoCompleteListView](/framework/autocomplete/KDAutoCompleteListView) (incomplete)
+* [KDAutoCompletedItem](/framework/autocomplete/KDAutoCompletedItem) (incomplete)
+* [KDSimpleAutocomplete](/framework/autocomplete/KDSimpleAutocomplete) (incomplete)
+* [KDMultipleInputView](/framework/autocomplete/KDMultipleInputView) (incomplete)
