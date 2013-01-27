@@ -49,6 +49,7 @@ additionsjust sent a pull-request to the [git repo](https://github.com/farslan/k
 
 ### Buttons
 * [KDButtonView](/framework/buttons/KDButtonView)
+* [KDToggleButton](/framework/buttons/KDToggleButton) (NOT FINISHED)
 * [KDButtonGroupView](/framework/buttons/KDButtonGroupView)
 * [KDButtonMenu](/framework/buttons/KDButtonMenu)
 * [KDButtonViewWithMenu](/framework/buttons/KDButtonViewWithMenu)
@@ -70,6 +71,24 @@ additionsjust sent a pull-request to the [git repo](https://github.com/farslan/k
 * [JTreeViewController](/framework/tree/JTreeViewController) (IN PROGRESS)
 * [JTreeView](/framework/tree/JTreeView) (IN PROGRESS)
 * [JTreeItemView](/framework/tree/JTreeItemView) (IN PROGRESS)
+
+### Split
+* [KDSplitViewPanel](/framework/split/KDSplitViewPanel) (NOT FINISHED)
+* [KDSplitResizer](/framework/split/KDSplitResizer) (NOT FINISHED)
+* [KDSplitView](/framework/split/KDSplitView) (NOT FINISHED)
+
+### Tab
+* [KDTabPaneView](/framework/tab/KDTabPaneView) (NOT FINISHED)
+* [KDTabViewController](/framework/tab/KDTabViewController) (NOT FINISHED)
+* [KDTabViewWithForms](/framework/tab/KDTabViewWithForms) (NOT FINISHED)
+
+### Tooltip
+* [KDToolTip](/framework/tooltip/KDToolTip) (NOT FINISHED)
+* [KDToolTipMenu](/framework/tooltip/KDToolTipMenu) (NOT FINISHED)
+
+### Upload
+* [KDFileUploadView](/framework/upload/KDFileUploadView) (NOT FINISHED)
+* [KDImageUploadView](/framework/upload/KDImageUploadView) (NOT FINISHED)
 
 ### Menus
 * [JContextMenu](/framework/menus/JContextMenu) (NOT FINISHED)
