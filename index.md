@@ -1,6 +1,4 @@
-# Koding Framework Docs
-
-Welcome to Koding Framework Docs. KD Framework enables user to create custom
+Welcome to **Koding Framework Docs**. KD Framework enables user to create custom
 apps in an easy and productive way. 
 
 Below are some useful tutorial and api docs that will help you to create these
@@ -31,7 +29,7 @@ additionsjust sent a pull-request to the [git repo](https://github.com/farslan/k
 
 ## Components
 
-### Input
+### Input
 * [KDInputView](/framework/input/KDInputView)
 * [KDHitEnterInputView](/framework/input/KDHitEnterInputView)
 * [KDInputSwitch](/framework/input/KDInputSwitch)
@@ -66,11 +64,11 @@ additionsjust sent a pull-request to the [git repo](https://github.com/farslan/k
 * [KDListView](/framework/list/KDListView)
 * [KDListItemView](/framework/list/KDListItemView)
 
-### Modals
+### Modals
 * [KDModalView](/framework/modals/KDModalView)
 * [KDModalViewWithForms](/framework/modals/KDModalViewWithForms)
 
-### Forms
+### Forms
 * [KDFormView](/framework/forms/KDFormView)
 * [KDFormViewWithFields](/framework/forms/KDFormViewWithFields)
 
@@ -104,7 +102,7 @@ additionsjust sent a pull-request to the [git repo](https://github.com/farslan/k
 * [JContextMenuTreeView](/framework/menus/JContextMenuTreeView) _(incomplete)_
 * [JContextMenuTreeViewController](/framework/menus/JContextMenuTreeViewController) _(incomplete)_
 
-### Autocomplete
+### Autocomplete
 * [KDAutoComplete](/framework/autocomplete/KDAutoComplete) _(incomplete)_
 * [KDAutoCompleteController](/framework/autocomplete/KDAutoCompleteController) _(incomplete)_
 * [KDAutoCompleteListItemView](/framework/autocomplete/KDAutoCompleteListItemView) _(incomplete)_
