@@ -48,8 +48,9 @@ currently supported:
   string. Useful if you want users guide for an input type (like :
   foo@example.com). Here the user know that he should enter an email address.
 * **disabled:** a Boolean value.By default it is set to no. Makes the text field disabled.
-* **selectOptions:** an Array of Strings. By default it is null. This is used to set
-  options if you have choosed the type of the KDInputView as `select`.
+* **selectOptions:** an Array of items to put in the input list. Each item is an object of the form {title: "A title", value: "A value"}.
+ The `title` element is what is displayed while `value` is the value the html select element returns. By default it is null.
+ This is used to set options if you have choosed the type of the KDInputView as `select`
 * **validate:** an Object of Validation options see
   [KDInputValidator](/framework/kdinputvalidator) for details. By default it is
   null.  Useful if you want validate the input for certain cases (like email,
