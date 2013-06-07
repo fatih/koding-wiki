@@ -4,7 +4,7 @@ apps in an easy and productive way.
 Below are some useful tutorial and api docs that will help you to create these
 apps. I recommended to use the Kodepad app in Koding.com. It instantly let you
 modify and create apps on the-fly. For any improvements, modifications or
-additionsjust sent a pull-request to the [git repo](https://github.com/farslan/koding-wiki).
+additionsjust sent a pull-request to the [git repo](https://github.com/fatih/koding-wiki).
 
 ## Misc
 
